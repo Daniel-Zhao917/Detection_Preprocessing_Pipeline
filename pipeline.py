@@ -50,7 +50,7 @@ def video_to_frames(video_path, frames_dir, reader, overwrite=False, every=1, ch
                     resolution = processed_frame.shape
                     crop_height = int(resolution[0]*0.8)
                     cropped_img = processed_frame[0:crop_height, 0:resolution[1]] # cropped out bottom portion of image, aka the face we do not want
-                    participant_face = RetinaFace.extract_faces(cropped_img, align = True) # use RetinaFace
+                    participant_face = RetinaFace.extract_faces(cropped_img, align = False) # use RetinaFace
                     save_path = os.path.join(frames_dir, "{v:d}:{f:d}.jpg".format(v = video_num, f = frame)) # name each frame as 'video number/frame.jpg'
                     if not os.path.exists(save_path) or overwrite:
                         cv2.imwrite(save_path, participant_face[0]) # save extracted participant face to image path
