@@ -1,5 +1,5 @@
 # Detection_Preprocessing_Pipeline - Daniel Zhao
-(Message me on slack, or email zhaodan5@msu.edu for questions)
+(Please message me on slack, or email zhaodan5@msu.edu for questions)
 
 Current pipeline for processing video interviews of patients and interviewers and extracts the patient's faces for model training. <br />
 -Change the frame_count to change the increment of frames you want to be used (e.g. frame_count = 5 to extract every 5 frames for each video). <br />
