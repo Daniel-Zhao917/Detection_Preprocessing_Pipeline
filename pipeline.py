@@ -53,7 +53,7 @@ def video_to_frames(video_path, frames_dir, reader, overwrite=False, every=1, ch
                     participant_face = RetinaFace.extract_faces(cropped_img, align = True) # use RetinaFace
                     save_path = os.path.join(frames_dir, "{v:d}:{f:d}.jpg".format(v = video_num, f = frame)) # name each frame as 'video number/frame.jpg'
                     if not os.path.exists(save_path) or overwrite:
-                        cv2.imwrite(save_path, participant_face[0]) # save frame to image path
+                        cv2.imwrite(save_path, participant_face[0]) # save extracted participant face to image path
                         saved_count += 1
             frame += 1
         capture.release()
