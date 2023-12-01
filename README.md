@@ -1,4 +1,4 @@
-# Detection_Preprocessing_Pipeline - Daniel Zhao
+# Detection_Processing_Pipeline - Daniel Zhao
 (Please message me on slack, or email zhaodan5@msu.edu for questions)
 
 Current pipeline for processing video interviews of patients and interviewers and extracts the patient's faces for model training. <br />
